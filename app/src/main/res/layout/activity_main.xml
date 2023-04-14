@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_road"
+    android:keepScreenOn="true"
+    tools:context=".Activity_Main">
+
+    <!-- LinearLayout - hearts-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_IMG_lives"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_live3"
+            android:rotation="270"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_green" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_live2"
+            android:rotation="270"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_yellow" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_live1"
+            android:rotation="270"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_red" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/panel_Vertical_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_IMG_lives"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/main_layout_boardGame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/main_IMG_lives"
+            android:layout_weight="0.75"
+            android:background="@drawable/ic_road"
+            android:orientation="vertical">
+
+            <!--Row 0-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!-- [0,0]-->
+                <ImageView
+                    android:id="@+id/main_IMG_00"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:src="@drawable/ic_road" />
+                <!-- [0,1]-->
+                <ImageView
+                    android:id="@+id/main_IMG_01"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baby" />
+                <!--  [0,2]-->
+                <ImageView
+                    android:id="@+id/main_IMG_02"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+            </LinearLayout>
+
+            <!--Row 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!-- [1,0]-->
+                <ImageView
+                    android:id="@+id/main_IMG_10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+                <!-- [1,1]-->
+                <ImageView
+                    android:id="@+id/main_IMG_11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+                <!-- [1,2]-->
+                <ImageView
+                    android:id="@+id/main_IMG_12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+            </LinearLayout>
+
+            <!--Row 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!-- [2,0]-->
+
+                <!-- [2,1]-->
+                <ImageView
+                    android:id="@+id/main_IMG_20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+                <!-- [2,2]-->
+                <ImageView
+                    android:id="@+id/main_IMG_22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+
+            </LinearLayout>
+
+            <!--Row 3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!-- [3,0]-->
+
+                <ImageView
+                    android:id="@+id/main_IMG_30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+                <!-- [3,1]-->
+                <ImageView
+                    android:id="@+id/main_IMG_31"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+                <!-- [3,2]-->
+                <ImageView
+                    android:id="@+id/main_IMG_32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+
+            </LinearLayout>
+
+            <!--Row 4-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!-- [4,0]-->
+
+                <ImageView
+                    android:id="@+id/main_IMG_40"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+                <!-- [4,1]-->
+                <ImageView
+                    android:id="@+id/main_IMG_41"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+                <!-- [4,2]-->
+                <ImageView
+                    android:id="@+id/main_IMG_42"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+
+            </LinearLayout>
+
+
+            <!--Row 5-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!-- [5,0]-->
+
+                <ImageView
+                    android:id="@+id/main_IMG_50"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+                <!-- [5,1]-->
+
+
+                <ImageView
+                    android:id="@+id/main_IMG_51"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+                <!-- [5,2]-->
+                <ImageView
+                    android:id="@+id/main_IMG_52"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+
+            </LinearLayout>
+
+
+            <!--Row 6-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!-- [6,0]-->
+
+                <ImageView
+                    android:id="@+id/main_IMG_60"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+                <!-- [6,1]-->
+                <ImageView
+                    android:id="@+id/main_IMG_61"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_parents" />
+                <!-- [6,2]-->
+                <ImageView
+                    android:id="@+id/main_IMG_62"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_road" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/main_layout_boardGame"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+
+            <!--Buttons Row-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/main_BTN_left"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/style"
+                    android:backgroundTint="#f44434"
+                    android:scaleType="fitCenter"
+                    app:icon="@drawable/ic_arrow_left"
+                    app:iconGravity="textTop"
+                    app:iconSize="30dp"
+                    app:srcCompat="@drawable/ic_arrow_left" />
+
+                <ImageView
+                    android:id="@+id/main_IMG_empty"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter" />
+
+                <ImageButton
+                    android:id="@+id/main_BTN_right"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/style"
+                    android:backgroundTint="#f44434"
+                    android:scaleType="fitCenter"
+                    app:icon="@drawable/ic_arrow_right"
+                    app:iconGravity="textTop"
+                    app:iconSize="30dp"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
